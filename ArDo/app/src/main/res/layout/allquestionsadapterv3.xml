@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="388dp"
+        android:layout_height="715dp"
+        android:background="#E3DFDF"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/qViewImg"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/qViewQuestionRoot"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/qViewAnsA"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:text="A)" />
+
+        <TextView
+            android:id="@+id/qViewAnsB"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:text="B)" />
+
+        <TextView
+            android:id="@+id/qViewAnsC"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:text="C)" />
+
+        <TextView
+            android:id="@+id/qViewAnsD"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:text="D)" />
+
+        <TextView
+            android:id="@+id/qViewAnsE"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:text="E)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/qViewAnswer"
+                android:layout_width="200dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:text="Answer" />
+
+            <Button
+                android:id="@+id/qViewShowAnswer"
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#009688"
+                android:text="Show Answer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black" />
+
+            <Button
+                android:id="@+id/recycler_row_add_to_exam"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#009688"
+                android:text="Add To Exam" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/qViewDelete"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#009688"
+                android:text="Delete Question" />
+
+            <Button
+                android:id="@+id/qViewEdit"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#009688"
+                android:text="EdIt QuestIon" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

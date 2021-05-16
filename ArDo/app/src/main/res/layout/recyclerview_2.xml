@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:backgroundTint="#E3DFDF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="411dp"
+            android:layout_height="240dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cyclerview2_nametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center|center_vertical"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/cyclerview2_ppq"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center|center_vertical"
+                    android:text="Point Per Question" />
+
+                <TextView
+                    android:id="@+id/cyclerview2_examlength"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center|center_vertical"
+                    android:text="Exam Length" />
+
+                <TextView
+                    android:id="@+id/cyclerview2_difficulty"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center|center_vertical"
+                    android:text="Difficulty" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/cyclerview2_exportbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:backgroundTint="#009688"
+                    android:text="Export as Text" />
+
+                <Button
+                    android:id="@+id/cyclerview2_deletebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:backgroundTint="#009688"
+                    android:text="Delete Exam" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

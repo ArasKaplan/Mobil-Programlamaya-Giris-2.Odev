@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/options_act_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#E3DFDF"
+    tools:context=".options">
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options_act_top_text">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Exam Length" />
+
+        <EditText
+            android:id="@+id/options_act_exam_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Exam Length in Minutes"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Point Per Question" />
+
+        <EditText
+            android:id="@+id/options_act_ppq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Points per Question"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Difficulty" />
+
+        <EditText
+            android:id="@+id/options_act_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Difficulty"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/options_act_savebutton"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:backgroundTint="#009688"
+            android:onClick="saveDefaultOptions"
+            android:text="Save Default Options" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/options_act_top_text"
+        android:layout_width="344dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="Options"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

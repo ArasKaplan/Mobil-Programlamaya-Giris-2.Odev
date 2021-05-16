@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#E3DFDF"
+    tools:context=".add_exam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="254dp">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/add_exam_name"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Length of Exam" />
+
+        <EditText
+            android:id="@+id/add_exam_time"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Points Per Question" />
+
+        <EditText
+            android:id="@+id/add_exam_ppq"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Difficulty" />
+
+        <EditText
+            android:id="@+id/add_exam_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/add_exam_create"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:backgroundTint="#009688"
+            android:onClick="create_exam"
+            android:text="Create New Exam" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#E3DFDF"
+    tools:context=".AfterLog">
+
+    <EditText
+        android:id="@+id/textPart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Text Part"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="getImageFromGallery"
+        app:layout_constraintBottom_toTopOf="@+id/textPart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="50dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="174dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPart"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Qadder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#009688"
+        android:gravity="center_horizontal"
+        android:onClick="addQuestion"
+        android:text="Add Questıon"
+        app:layout_constraintBottom_toTopOf="@+id/Qall"
+        app:layout_constraintStart_toStartOf="@+id/Qall"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+    <Button
+        android:id="@+id/Qall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#009688"
+        android:gravity="center_horizontal"
+        android:onClick="allQuestions"
+        android:text="All QuestIons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Qadder" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="297dp"
+        android:layout_height="237dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="28dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/Qadder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RG"
+        app:layout_constraintTop_toBottomOf="@+id/textPart">
+
+        <EditText
+            android:id="@+id/answerA"
+            android:layout_width="282dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:hint="Answer A"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerB"
+            android:layout_width="282dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:hint="Answer B"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerC"
+            android:layout_width="282dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:hint="Answer C"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerD"
+            android:layout_width="282dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:hint="Answer D"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerE"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Answer E"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
