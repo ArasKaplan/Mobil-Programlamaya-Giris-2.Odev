@@ -1,5 +1,6 @@
 # Mobil-Programlamaya-Giris-2.Odev
 17011039-Ömer Aras Kaplan
+APK dosyası ve kaynak kodlar Repository içinde, uygulama tanıtım videosu ise https://youtu.be/d9KHyQbYaBU adresinde bulunabilir.
 
 
 Uygulamanın yapabildikleri:
